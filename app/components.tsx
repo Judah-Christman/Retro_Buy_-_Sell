@@ -6,11 +6,7 @@ import Script from 'next/script';
 import { motion, AnimatePresence } from 'framer-motion';
 import logo from '/images/sample-logo.png'
 
-type Review = {
-  name: string;
-  rating: number;
-  text: string;
-};
+
 
 
 function Navigation(){
@@ -101,10 +97,15 @@ Thanks for stopping by.
 
 function Reviews(){
 
+	type Review = {
+  	name: string;
+  	rating: number;
+  	text: string;
+	};
 
 
+  const [reviews, setReviews] = useState<Review[]>([]);
 
-  const [reviews, setReviews] = useState([]);
 
   useEffect(() => {
     async function loadReviews() {
