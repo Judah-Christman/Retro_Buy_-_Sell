@@ -13,7 +13,6 @@ export const metadata: Metadata = {
     url: "https://yourdomain.com",
     siteName: "Retro Buy & Sell",
   },
-  locale: "en_US",
   type: "website",
 }
 
