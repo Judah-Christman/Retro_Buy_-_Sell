@@ -12,7 +12,7 @@ export const metadata: Metadata = {
     description: "Your place for your retro media needs!",
     url: "https://yourdomain.com",
     siteName: "Retro Buy & Sell",
-  }
+  },
   locale: "en_US",
   type: "website",
 }
