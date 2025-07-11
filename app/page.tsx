@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { Navigation, About, Reviews, Contact } from './components.tsx';
+import { Navigation, About, Reviews, Contact } from './components';
 
 export default function Home() {
   return (
