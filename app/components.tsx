@@ -183,7 +183,7 @@ function Contact(){
           		<input type="text" required placeholder="Name" className="block w-3/4 bg-[#efe5e3] mx-auto my-5 p-2 rounded-xl text-[#4d4b4b]" />
           		<input type="number" required placeholder="Phone Number" className="block w-3/4 bg-[#efe5e3] mx-auto my-5 p-2 rounded-xl text-[#4d4b4b]" />
           		<input type="email" required placeholder="Email" className="block w-3/4 bg-[#efe5e3] mx-auto my-5 p-2 rounded-xl text-[#4d4b4b]" />
-          		<textarea rows="4" type="text" required placeholder="Message..." className="block w-3/4 bg-[#efe5e3] mx-auto my-5 p-2 rounded-xl text-[#4d4b4b]" />
+          		<textarea rows={4} type="text" required placeholder="Message..." className="block w-3/4 bg-[#efe5e3] mx-auto my-5 p-2 rounded-xl text-[#4d4b4b]" />
 
 
 			</motion.form>
