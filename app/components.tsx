@@ -60,7 +60,7 @@ function About(){
 
 					</motion.h1>
 					<motion.p 
-						className="w-full sm:w-3/4 p-1 m-auto"
+						className="w-full sm:w-3/4 p-1 text-justify m-auto"
 						initial={{ y: "100%", opacity: 0 }}
           				whileInView={{ y: 0, opacity: 1 }}
           				transition={{ duration: 0.4, ease: 'easeInOut'}}
@@ -69,19 +69,9 @@ function About(){
 
 We’re a small business with a big passion for retro games, vintage consoles, and the golden age of pop culture. Whether you’re dusting off your childhood favorites or just discovering the magic of the NES, Game Boy, or Sega Genesis, we’re here to help you find (or relive) the joy of old-school gaming.
 
-Located right here in [Your City/Area], we’ve spent years building a space where collectors, players, and fans can come together — online and in person — to buy, sell, and trade the treasures of decades past. From rare cartridges and controllers to posters, toys, and more, we’re proud to offer a growing inventory that’s as fun to browse as it is to collect.
+Located right here in Eugene Oregon, we’ve spent years building a space where collectors, players, and fans can come together to buy, sell, and trade the treasures of decades past. From rare cartridges and controllers to posters, toys, and more, we’re proud to offer a growing inventory that’s as fun to browse as it is to collect.
 
-We believe in fair pricing, honest trade-ins, and real connections. When you reach out to us, you're not talking to a robot — you're talking to someone who probably spent way too many hours trying to beat Contra without the cheat code.
-
-Why choose Retro Buy & Sell?
-
-We're local and proud of it — no big corporate nonsense here
-
-We inspect every item by hand for quality and authenticity
-
-We offer trade-ins and cash deals for your retro gear
-
-We love helping you find that one game you thought was lost forever
+We believe in fair pricing, honest trade-ins, and real connections.
 
 At the end of the day, we’re not just a store — we’re part of a community that keeps the classics alive. Whether you're buying your first GameCube or finally tracking down that copy of EarthBound, we’re here for the journey.
 
