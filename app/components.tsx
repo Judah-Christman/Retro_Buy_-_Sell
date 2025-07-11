@@ -95,6 +95,12 @@ Thanks for stopping by.
 
 function Reviews(){
 
+	type Review = {
+  name: string;
+  rating: number;
+  text: string;
+};
+
 
   const [reviews, setReviews] = useState([]);
 
