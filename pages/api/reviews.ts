@@ -1,9 +1,6 @@
 import type { NextApiRequest, NextApiResponse } from "next";
 
-export default async function handler(
-  req: NextApiRequest,
-  res: NextApiResponse
-) {
+export default async function handler(req: NextApiRequest, res: NextApiResponse) {
   const url =
     "https://docs.google.com/spreadsheets/d/e/2PACX-1vT_fTTyHO6z7DDWnr2oYFkkKiy4OjXTihTm2gTrR7di7KPFr3tMR3ue3p7vPjaD_TgCHeqhlbuc7fp2/pub?output=csv";
 
