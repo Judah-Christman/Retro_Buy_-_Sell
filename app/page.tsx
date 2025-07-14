@@ -11,7 +11,9 @@ export default function Home() {
         </div>
       </div>
       <About />
+      <hr className="w-3/4 mx-auto py-5"/>
       <Contact />
+      <hr className="w-3/4 mx-auto py-5"/>
       <Reviews />
 
       

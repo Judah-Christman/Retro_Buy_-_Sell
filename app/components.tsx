@@ -46,25 +46,22 @@ function About(){
 	return(
 		<div id="about" className="w-full my-10">
 
-			<div className="w-full h-dvh sm:grid sm:grid-cols-6 gap-4">
+			<div className="w-full h-3/4 sm:grid sm:grid-cols-6 gap-4">
 				<div className="sm:bg-[url(/images/about-side.gif)] bg-center bg-cover"></div>
-				<div className="col-span-4">
-					<motion.h1
-						className="w-full text-center text-4xl md:text-6xl font-bold text-[#d14b4b] font-bold py-20"
-						initial={{ y: "100%", opacity: 0 }}
-          				whileInView={{ y: 0, opacity: 1 }}
-          				transition={{ duration: 0.4, ease: 'easeInOut'}}
-          				viewport={{ once: true }}>
+				<motion.div 
+					className="col-span-4"
+      			initial={{ scale: 0, opacity: 0 }}
+          		whileInView={{ scale: 1, opacity: 1 }}
+          		transition={{ duration: 0.5, ease: 'easeInOut'}}
+          		viewport={{ once: true }}>
+					<h1
+						className="w-full text-center text-4xl md:text-6xl font-bold text-[#d14b4b] font-bold py-15">
 
           				ABOUT
 
-					</motion.h1>
-					<motion.p 
-						className="w-full sm:w-3/4 p-1 text-justify m-auto"
-						initial={{ y: "100%", opacity: 0 }}
-          				whileInView={{ y: 0, opacity: 1 }}
-          				transition={{ duration: 0.4, ease: 'easeInOut'}}
-          				viewport={{ once: true }}>
+					</h1>
+					<p 
+						className="w-full sm:w-3/4 p-1 text-justify m-auto">
 						Hi there — and welcome to Retro Buy & Sell, your local hub for all things classic, nostalgic, and just plain awesome.
 
 We’re a small business with a big passion for retro games, vintage consoles, and the golden age of pop culture. Whether you’re dusting off your childhood favorites or just discovering the magic of the NES, Game Boy, or Sega Genesis, we’re here to help you find (or relive) the joy of old-school gaming.
@@ -76,8 +73,8 @@ We believe in fair pricing, honest trade-ins, and real connections.
 At the end of the day, we’re not just a store — we’re part of a community that keeps the classics alive. Whether you're buying your first GameCube or finally tracking down that copy of EarthBound, we’re here for the journey.
 
 Thanks for stopping by.
-					</motion.p>
-				</div>
+					</p>
+				</motion.div>
 				<div className="sm:bg-[url(/images/about-side.gif)] bg-center bg-cover"></div>
 			</div>
 		
@@ -109,11 +106,11 @@ function Reviews(){
   }, []);
 
 	return(
-		<section id="reviews" className="w-full py-12">
+		<section id="reviews" className="w-full py-10">
       <motion.h1
-        className="text-center text-4xl md:text-6xl font-bold text-[#d14b4b] mb-10 pt-20"
-        initial={{ y: "100%", opacity: 0 }}
-        whileInView={{ y: 0, opacity: 1 }}
+        className="text-center text-4xl md:text-6xl font-bold text-[#d14b4b] py-15"
+        initial={{ scale: 0, opacity: 0 }}
+        whileInView={{ scale: 1, opacity: 1 }}
         transition={{ duration: 0.4, ease: "easeInOut" }}
         viewport={{ once: true }}
       >
@@ -125,8 +122,8 @@ function Reviews(){
           <motion.div
             key={idx}
             className="bg-[#d14b4b] rounded-xl p-6 shadow-md"
-            initial={{ opacity: 0, y: 50 }}
-            whileInView={{ opacity: 1, y: 0 }}
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
             transition={{ duration: 0.3, delay: idx * 0.1 }}
             viewport={{ once: true }}
           >
@@ -149,24 +146,21 @@ function Reviews(){
 
 function Contact(){
 	return(
-		<div id="contact" className="w-full min-h-dvh">
-			<motion.h1 
-				className="w-full text-4xl md:text-6xl text-center text-[#d14b4b] pt-20 font-bold"
-				initial={{ y: "100%", opacity: 0 }}
-          		whileInView={{ y: 0, opacity: 1 }}
-          		transition={{ duration: 0.4, ease: 'easeInOut'}}
-          		viewport={{ once: true }}
-			>
+	<div id="contact" className="my-10">
+		<motion.div 
+			className="w-full min-h-dvh"
+			initial={{ scale: 0, opacity: 0 }}
+      whileInView={{ scale: 1, opacity: 1 }}
+      transition={{ duration: 0.4, ease: 'easeInOut'}}
+      viewport={{ once: true }}>
+			<h1 
+				className="w-full text-4xl md:text-6xl text-center text-[#d14b4b] py-15 font-bold">
 
 				CONTACT
 
-			</motion.h1>
-			<motion.form
-				className="w-3/4 md:w-1/2 bg-[#d14b4b] mx-auto my-10 rounded-xl p-5"
-				initial={{ y: "100%", opacity: 0 }}
-          		whileInView={{ y: 0, opacity: 1 }}
-          		transition={{ duration: 0.4, ease: 'easeInOut'}}
-          		viewport={{ once: true }}>
+			</h1>
+			<form
+				className="w-3/4 md:w-1/2 bg-[#d14b4b] mx-auto my-10 rounded-xl p-5">
 
           		<h1 className="w-full text-center text-2xl">Please Reach out!</h1>
 
@@ -174,10 +168,12 @@ function Contact(){
           		<input type="number" required placeholder="Phone Number" className="block w-3/4 bg-[#efe5e3] mx-auto my-5 p-2 rounded-xl text-[#4d4b4b]" />
           		<input type="email" required placeholder="Email" className="block w-3/4 bg-[#efe5e3] mx-auto my-5 p-2 rounded-xl text-[#4d4b4b]" />
           		<textarea rows={4} required placeholder="Message..." className="block w-3/4 bg-[#efe5e3] mx-auto my-5 p-2 rounded-xl text-[#4d4b4b]" />
+          		<button className="w-3/4 p-2 bg-green-500 rounded-xl m-auto block">Submit</button>
 
 
-			</motion.form>
-		</div>
+			</form>
+		</motion.div>
+	</div>
 
 	);
 }
