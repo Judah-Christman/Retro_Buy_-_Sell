@@ -54,12 +54,12 @@ function About(){
           		whileInView={{ scale: 1, opacity: 1 }}
           		transition={{ duration: 0.5, ease: 'easeInOut'}}
           		viewport={{ once: true }}>
-					<h1
+					<h2
 						className="w-full text-center text-4xl md:text-6xl font-bold text-[#d14b4b] font-bold py-15">
 
           				ABOUT
 
-					</h1>
+					</h2>
 					<p 
 						className="w-full sm:w-3/4 p-1 text-justify m-auto">
 						Hi there — and welcome to Retro Buy & Sell, your local hub for all things classic, nostalgic, and just plain awesome.
@@ -106,27 +106,21 @@ function Reviews(){
   }, []);
 
 	return(
-		<section id="reviews" className="w-full py-10">
-      <motion.h1
-        className="text-center text-4xl md:text-6xl font-bold text-[#d14b4b] py-15"
-        initial={{ scale: 0, opacity: 0 }}
+		<motion.section id="reviews" className="w-full py-10"
+		initial={{ scale: 0, opacity: 0 }}
         whileInView={{ scale: 1, opacity: 1 }}
         transition={{ duration: 0.4, ease: "easeInOut" }}
-        viewport={{ once: true }}
-      >
+        viewport={{ once: true }}>
+      <h2
+        className="text-center text-4xl md:text-6xl font-bold text-[#d14b4b] py-15">
         REVIEWS
-      </motion.h1>
+      </h2>
 
       <div className="grid gap-6 max-w-4xl max-h-60 mx-auto px-4 overflow-y-scroll">
         {reviews.map((review, idx) => (
-          <motion.div
+          <div
             key={idx}
-            className="bg-[#d14b4b] rounded-xl p-6 shadow-md"
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            transition={{ duration: 0.3, delay: idx * 0.1 }}
-            viewport={{ once: true }}
-          >
+            className="bg-[#d14b4b] rounded-xl p-6 shadow-md">
             <div className="flex gap-2 mb-2">
               <span className="font-semibold text-[#4d4b4b]">{review.name}</span>
               <span className="text-yellow-500">
@@ -135,12 +129,12 @@ function Reviews(){
               </span>
             </div>
             <p className="text-sm">{review.text}</p>
-          </motion.div>
+          </div>
         ))}
       </div>
 
       <p className="text-xl text-center py-5">Would you like to leave a <Link href="https://docs.google.com/forms/d/e/1FAIpQLSewWKyEbgSNwmg5Uf6W_ypkAL0TjjwSzm4jigAISdlABMh01w/viewform?usp=header" target="_blank" className="font-bold underline">Review</Link>?</p>
-    </section>
+    </motion.section>
 	);
 }
 
@@ -153,12 +147,12 @@ function Contact(){
       whileInView={{ scale: 1, opacity: 1 }}
       transition={{ duration: 0.4, ease: 'easeInOut'}}
       viewport={{ once: true }}>
-			<h1 
+			<h2 
 				className="w-full text-4xl md:text-6xl text-center text-[#d14b4b] py-15 font-bold">
 
 				CONTACT
 
-			</h1>
+			</h2>
 			<form
 				className="w-3/4 md:w-1/2 bg-[#d14b4b] mx-auto my-10 rounded-xl p-5">
 
